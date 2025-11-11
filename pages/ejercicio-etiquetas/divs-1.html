@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios de DIV</title>
+   
+   <style>
+    
+    #parrafo{
+    font-size: 10px;
+    background-color:brown ;
+    }
+
+    .seo{
+    background-color: burlywood;
+    font-size: 25px;
+    }
+
+    p{ 
+    background-color:blueviolet;
+    }
+
+    *{
+    margin:0px;
+    padding: 0px;
+    }
+
+    /* estilos de los divs */
+
+    /* estilos div superior */
+    .div-top{
+    background-color: aquamarine;
+    height: 20vh;
+    width: 100vw;
+    text-align:center;
+    border: 2px black dashed
+    }
+
+    #contenedor{
+        display: flex;
+    }
+
+    /* estilos div izquierdo */
+
+
+    .div-left{
+    float: left;
+    background-color: lightgreen;
+    height: 60vh;
+    width: 30vw;
+    text-align:center;
+    border-radius:2%;
+    border: 2px red groove;
+    }
+
+    /* estilos div derecho */
+    .div-right{
+    float: right;
+    background-color: lightpink;
+    height: 60vh;
+    width: 40vw;
+    text-align:center;
+    border: 7px blue inset;
+    border-radius: 5pc;
+    }
+
+    /* estilos div inferior */
+
+    .div-bottom{
+    background-color: yellow;
+    height: 20vh;
+    width: 90vw;
+    text-align:center;
+    margin: 3%;
+    border: 5px pink groove;
+    border-radius: 3%;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<!--DIVS-->
+<p id="parrafo" class="seo" style="background-color: chartreuse;"> SEO
+son las siglas en inglés de "Search Engine Optimization" (Optimización en Motores de Búsqueda), un conjunto de técnicas para mejorar la visibilidad de un sitio web en los resultados orgánicos de buscadores como Google. El objetivo principal es atraer tráfico de calidad a un sitio web, mejorando su posicionamiento en los resultados de búsqueda sin pagar por publicidad, lo que lo convierte en una estrategia a largo plazo muy rentable. </p>
+
+<div class="div-top"> </div>
+
+<div class="contenedor" id="contenedor">
+
+<div class="div-left"> </div>
+
+<div class="div-right"> </div>
+</div>
+
+<div class="div-bottom"> </div>
+
+</body>
+</html>
