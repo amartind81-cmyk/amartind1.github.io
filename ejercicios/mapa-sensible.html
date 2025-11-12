@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <title>Mapa Sensible</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Author" content="Andres">
+    <meta name="Description" content="Mapa sensible que muestra wikipedia de un país al presionar en el mismo">
+    <meta name="Keywords" content="mapa, HTML, proyeecto, mapa sensible">
+<!-- icono favorito, el logo de la empresa que se muestra en la pestaña al lado de title-->
+<link rel="shortcut icon" href="./../img/logo-title/mapa.svg"  type="image/x-icon">
+
+    <style>
+        body {
+            background-color: rgb(114, 255, 114);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .h1 {
+            color: rgb(0, 0, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .mapa{
+            border-radius: 3px;   /* Bordes redondeados */
+            border: 2px solid #333; /* Borde */
+            display: block;
+            margin: 20px auto;     /* Centrada */
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 class="h1">Ejercicio de Mapa Sensible</h1>
+    
+    <!--MAPA DE PAÍSES-->
+    
+    <!--imagen de paises-->
+    <img src="./../img/etiquetas-semanticas/mapa-españa-sensible.jpg" alt="Mapa de España" usemap="#mapaespana" class="mapa">
+    
+    <!--Comienzo del mapa-->
+    <map name="mapaespana"> 
+
+        <!--area de Portugal-->
+        <area shape="rect" coords="94,139,131,307"
+        alt="Portugal" href="https://es.wikipedia.org/wiki/Portugal">
+
+        <!--area de España-->
+        <area shape="rect" coords="151,87,275,324"
+        alt="España" href="https://es.wikipedia.org/wiki/Espa%C3%B1a">
+
+        <!--area Francia-->
+        <area shape="circle" coords="350,84,55"
+        alt="Francia" href="https://es.wikipedia.org/wiki/Francia">
+
+    </map>
+
+    <!--MAPA DE MALLORCA-->
+
+    <!--imagen de Mallorca-->
+    <img src="./../img/etiquetas-semanticas/mallorca-mapa-sensible.jpg" alt="Imagen de Mallorca" usemap="#mapamallorca" class="mapa">
+
+    <!--Comienzo del mapa-->
+    <map name="mapamallorca">
+
+        <!--area de mallorca-->
+        <area shape="poly" coords="150.9,19.7,23.2,98.7,52.9,127.8,81.0,105.9,156.8,171.0,231.7,66.2"
+        alt="mallorca" href="https://es.wikipedia.org/wiki/Mallorca">
+
+    </map>
+    
+</body>
+</html>
